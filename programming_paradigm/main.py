@@ -1,5 +1,3 @@
-# main.py
-
 import sys
 from robust_division_calculator import safe_divide
 
@@ -13,11 +11,8 @@ def main():
 
     result = safe_divide(numerator, denominator)
 
-    if isinstance(result, float):
-        print(f"The result of the division is {result}")
-    else:
-        # result is an error message
-        print(result)
+    # Always print in the required format
+    print(f"The result of the division is {result}")
 
 if __name__ == "__main__":
     main()
